@@ -1,0 +1,55 @@
+
+.container{
+    display: block;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    border-radius: 8px; 
+    //min-height: 480px;
+    position:absolute;
+    width:446px;
+    padding-left: 40px;
+    padding-top:40px;
+    padding-right: 40px;
+    padding-bottom: 36px;
+    margin-left: 38%;
+    margin-top: 8%;
+}
+
+.Logo-name{
+    text-align: center;
+}
+.forget-link{
+    color: #1a73e8;
+    
+    font-size:15px;
+}
+
+
+.route-btn{
+     padding-top: 60px;
+}
+.account{
+    border: none;
+    color:rgb(54, 148, 224);
+    font-size: medium;
+    background-color: transparent;
+}
+.btn-next{
+    background-color: #1a73e8;
+    height:33px;
+    width:80px;
+    border-radius: 3px;
+    font-size: 15px; 
+    text-align: center;
+    color: white ;
+    border: none; 
+    float: right;
+    cursor: pointer;
+}
+.account{
+    font-weight: bold; 
+    border: none;
+    color:#1a73e8;
+    text-decoration: none;
+}

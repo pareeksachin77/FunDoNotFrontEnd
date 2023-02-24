@@ -1,0 +1,99 @@
+.container{
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    border-radius: 8px;    
+    //min-height: 500px;
+    position:absolute;
+    width:760px;
+    padding-left: 40px;
+    padding-top:48px;
+    padding-right: 40px;
+    padding-bottom: 36px;
+    margin-left: 28%;
+    margin-top: 2%;
+    //margin-bottom:0px;
+}
+.Logo-name{
+    text-align: center;
+}
+.creadentials{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.creadentials >div{
+    text-align: center;
+    line-height: 75px;
+    padding-left: 5px;
+}
+.username{
+    padding-left: 5px;
+    width: 100%;
+}
+.username1{
+    width:97%;
+}
+.a-class{
+    color:#1a73e8;
+    margin-top:28px;
+    font-size: 16px;
+    //padding-top: 28px;
+}
+
+
+.password-details{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.password-details >div{
+    text-align: center;
+    line-height: 75px;
+    padding-left: 5px;
+}
+
+.submit-button{
+    padding-top: 40px;
+}
+
+.next-btn{
+    background-color: #1a73e8;
+    height:33px;
+    width:80px;
+    border-radius: 3px;
+    font-size: 15px; 
+    text-align: center;
+    color: white ;
+    border: none; 
+    float: right;
+    cursor: pointer;
+}
+
+.signin-link{
+    font-weight: bold; 
+    border: none;
+    color:#1a73e8;
+    text-decoration: none;
+}
+
+.right-side{
+   width:280px;
+   align-items: center;
+   padding-top: 70px;
+   padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

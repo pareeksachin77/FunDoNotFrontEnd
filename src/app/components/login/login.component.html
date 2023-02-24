@@ -1,0 +1,46 @@
+<div class="container">
+            <!---Logo-->
+            <div class="Logo-name">
+                <h1>
+                    <span style="color: blue;">F</span>
+                    <span style="color: red;">u</span>
+                    <span style="color: yellow;">n</span>
+                    <span style="color: green;">d</span>
+                    <span style="color: red;">o</span>
+                    <span style="color: blue;">o</span>
+                </h1>
+                <h1 class="heading">Log in</h1>
+                <h3 class="sub-heading">Use your Fundoo Account</h3>
+            </div>
+        <!---Email-->
+<form>
+    <div class="Email">
+        <mat-form-field appearance="outline" style="width:23vw">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="">  
+            <mat-error>Enter valid email</mat-error>          
+        </mat-form-field>
+        
+
+        <mat-form-field appearance="outline" style="width:23vw">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" placeholder="">  
+            <mat-error>Enter valid email</mat-error>                    
+        </mat-form-field><br>
+        <a class="forget-link" routerLink="/forget-password">Forget Password?</a>
+   
+    </div>
+    
+    <!---Suggestion-->
+    <div>
+        <mat-hint class="hint1">Not your computer? Use Guest mode to sign in privately.</mat-hint>
+    </div>
+    <div>
+        <mat-hint class="hint2">Learn More</mat-hint>
+    </div>
+    <div class="route-btn">
+        <button class="account" mat-stroked-button routerLink="/register">Create Account</button>
+        <button class="btn-next" mat-flat-button click="onSubmit()">Login</button>
+    </div>
+</form>
+</div>
