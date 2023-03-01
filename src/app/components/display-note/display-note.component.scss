@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    box-sizing: border-box;
+    align-items: stretch;
+    position:absolute;
+    border: 1px solid   green;
+    width:300px;        
+    background-color:rgb(255, 255, 255);
+    border-radius: 7px; 
+    box-shadow: 1px 3px 3px 3px #aaaaaa;
+    padding: 5px 12px 5px 12px;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.img{
+    border: 1px solid green;
+    width: 16px; 
+    margin-left: 250px;
+    margin-top: 0%;
+    
+}
+
+.p{
+    // width:500px;
+    //padding: 8px;
+    //margin-bottom: 10px;
+    border:none;
+    font-size: 120%;
+    outline:none;
+    background-color:rgb(252, 252, 252)
+}

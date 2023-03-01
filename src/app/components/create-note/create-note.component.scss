@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    box-sizing: border-box;
+    align-items: stretch;
+    position:absolute;
+    border: 1px solid   green;
+    width:600px;        
+    background-color:rgb(255, 255, 255);
+    border-radius: 7px; 
+    box-shadow: 1px 3px 3px 3px #aaaaaa;
+    padding: 5px 12px 5px 12px;
+    margin-left: 28%;
+    margin-top: 2%;
+}
+.img{
+    border: 1px solid green;
+    width: 16px; margin-left: 30px;
+}
+
+.input{
+    width:500px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border:none;
+    font-size: 120%;
+    outline:none;
+    background-color:rgb(252, 252, 252)
+}
+.icon-container{
+    display: flex;
+   border:1px solid green;
+   height: 35px;
+}
+
+.sub-icon-container{
+    font-size: small;
+    margin-top: 0%;
+  }
+.closebutton{
+    font-size: 14px;
+    padding-left: 180px;
+    border:transparent;
+    background-color: transparent;
+}
