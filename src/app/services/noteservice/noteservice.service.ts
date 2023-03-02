@@ -13,10 +13,11 @@ token:any;
     console.log(data)
     let header={
       headers: new HttpHeaders({
-        'Content-Type':'application/json'
+        'Content-Type':'application/json',
+        'Authorization':this.token
       })
       
     }
-    return this.http.postservice('https://localhost:44391/api/Notes/Create',data,false,header)
+    return this.http.postservice('https://localhost:44391/api/Notes/Create',data,true,header)
   }
 }
