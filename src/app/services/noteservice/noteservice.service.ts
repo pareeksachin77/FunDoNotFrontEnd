@@ -7,17 +7,27 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class NoteserviceService {
 token:any;
-  constructor(private http:HttpService) { this.token = localStorage.getItem('token')}
+constructor(private http:HttpService) { this.token = localStorage.getItem('token')}
+  
   createnote(data:any){
     console.log(this.token)
     console.log(data)
     let header={
       headers: new HttpHeaders({
         'Content-Type':'application/json',
-        'Authorization':this.token
+        'Authorization':'bearer '+this.token
       })
       
     }
     return this.http.postservice('https://localhost:44391/api/Notes/Create',data,true,header)
+  }
+  getAllNotes(){
+    let header={
+      header: new HttpHeaders({
+        'Content-Type':'application/json',
+        'Authorization':'bearer '+this.token
+      })
+    }
+    return this.http.getservices('https://localhost:44391/api/Notes/RetrieveAllNote',true,header)
   }
 }

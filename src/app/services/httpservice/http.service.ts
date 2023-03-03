@@ -10,8 +10,8 @@ export class HttpService {
   postservice(url:any,data:any,token:boolean=false,options:any){
     return this.httpclient.post(url,data,token && options)
   }
-  getservices(url:any,data:any,token:boolean=false,options:any){
-    return this.httpclient.post(url,data,token && options)
+  getservices(url:any,token:boolean=false,options:any){
+    return this.httpclient.get(url,token && options)
   }
   putservice(){
     

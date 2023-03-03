@@ -10,8 +10,6 @@ import { NoteserviceService } from 'src/app/services/noteservice/noteservice.ser
 export class CreateNoteComponent implements OnInit {
   createnoteForm !: FormGroup;
   submitted = false;
-  title:any;
-  desc:any;
   show=false;
   constructor(private fb: FormBuilder, private note: NoteserviceService) { }
 
@@ -27,7 +25,6 @@ export class CreateNoteComponent implements OnInit {
 
   close():void{
     this.show=false;
-    console.log(this.title,this.desc);
 
     if(this.createnoteForm.valid){
       console.log("valid data",this.createnoteForm.value);

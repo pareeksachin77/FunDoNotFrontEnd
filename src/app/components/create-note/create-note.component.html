@@ -3,11 +3,11 @@
     <form [formGroup]="createnoteForm">
         <div>
         <div class="title" *ngIf="show">
-            <input type="text" class="input" placeholder="Title">
+            <input type="text" class="input" formControlName="title"placeholder="Title">
             <img class="img" src="../../../assets/push_pin.svg">
         </div>
         <div class="description" *ngIf="!show || show" (click)="isShow();">
-            <input type="text" class="input" placeholder="Take a note...">
+            <input type="text" class="input" formControlName="description" placeholder="Take a note...">
         </div>
         <div class="icon-container" *ngIf="show">
             <!-- <div class="sub-icon-container"> -->
