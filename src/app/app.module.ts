@@ -22,6 +22,7 @@ import { CreateNoteComponent } from './components/create-note/create-note.compon
 import { GetAllNotesComponent } from './components/get-all-notes/get-all-notes.component';
 import { DisplayNoteComponent } from './components/display-note/display-note.component';
 import { IconcompComponent } from './components/iconcomp/iconcomp.component';
+import { DemoComponent } from './components/demo/demo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { IconcompComponent } from './components/iconcomp/iconcomp.component';
     CreateNoteComponent,
     GetAllNotesComponent,
     DisplayNoteComponent,
-    IconcompComponent
+    IconcompComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,

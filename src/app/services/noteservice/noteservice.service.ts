@@ -22,8 +22,9 @@ constructor(private http:HttpService) { this.token = localStorage.getItem('token
     return this.http.postservice('https://localhost:44391/api/Notes/Create',data,true,header)
   }
   getAllNotes(){
+    console.log('this is noteservice')
     let header={
-      header: new HttpHeaders({
+      headers: new HttpHeaders({
         'Content-Type':'application/json',
         'Authorization':'bearer '+this.token
       })

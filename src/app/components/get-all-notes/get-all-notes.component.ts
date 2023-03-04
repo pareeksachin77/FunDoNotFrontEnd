@@ -8,15 +8,18 @@ import { NoteserviceService } from 'src/app/services/noteservice/noteservice.ser
   styleUrls: ['./get-all-notes.component.scss']
 })
 export class GetAllNotesComponent implements OnInit {
+  notesArray:any;
 
   constructor(private note: NoteserviceService) { }
 
   ngOnInit(): void {
-    this.note.getAllNotes();
+    this.getAllNotes();
   }
   getAllNotes(){
+    console.log('hello');
     this.note.getAllNotes().subscribe((res:any)=>{
-      console.log(res)
+      console.log('data notes',res)
+      this.notesArray = res.data;
     },error=>{
       console.log(error)
     })

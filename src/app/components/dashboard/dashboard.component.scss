@@ -67,34 +67,36 @@
       position: -1.5;
     }
     .search-submit{
-      border: 1px solid black;
+      //border: 1px solid black;
       border-radius: 7px;
+      width: 700px;
+      height: 40px;
       background-color: rgb(240, 243, 245);
       padding-left: 30px;
       padding-right:10px;
-      margin-left: 10px;
+      margin-left: 30px;
       
     }
     .three-btn{
       //border: 1px solid red;
-      margin-left: 350px;
-      text-align: center;
+      margin-left: 120px;
+      
       
     }
     .refresh-btn{
       height:30px;
       width:27px;
-      
+      padding-right: 10px;
      }
     .view-list-btn{
       height:30px;
       width:27px;
-      
+      padding-right: 10px;
     }
     .settings-btn{
       height:30px;
       width:27px;
-      
+      padding-right: 20px;
     }
     .apps{
       height:30px;
@@ -120,4 +122,11 @@
     /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
        `<body>` to be our scrolling element for mobile layouts. */
     flex: 1 0 auto;
+  }
+  .icon1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon2{
+    width:30px;
   }
