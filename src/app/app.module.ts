@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatDialogModule } from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
@@ -22,8 +23,12 @@ import { CreateNoteComponent } from './components/create-note/create-note.compon
 import { GetAllNotesComponent } from './components/get-all-notes/get-all-notes.component';
 import { DisplayNoteComponent } from './components/display-note/display-note.component';
 import { IconcompComponent } from './components/iconcomp/iconcomp.component';
-import { DemoComponent } from './components/demo/demo.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { UpdateComponent } from './components/update/update.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
+
   declarations: [
     AppComponent,
     RegisterComponent,
@@ -35,7 +40,7 @@ import { DemoComponent } from './components/demo/demo.component';
     GetAllNotesComponent,
     DisplayNoteComponent,
     IconcompComponent,
-    DemoComponent
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +55,12 @@ import { DemoComponent } from './components/demo/demo.component';
     MatListModule,
     MatIconModule,
     MatToolbarModule,
+    MatSnackBarModule,
+    FormsModule,
+    MatDialogModule,
+    FlexLayoutModule,
+    MatMenuModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

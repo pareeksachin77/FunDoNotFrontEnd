@@ -1,20 +1,46 @@
-<div class="container">
-<div>
-<img class="img1" src="../../../assets/notifications.svg">
-</div>
-<div>
-<img class="img1" src="../../../assets/person_add.svg">
-</div>
-<div>
-<img class="img1" src="../../../assets/colorplette.svg">
-</div>
-<div>
-<img class="img1" src="../../../assets/image.svg">
-</div>
-<div>
-<img class="img1" src="../../../assets/archive.svg">
-</div>
-<div>
-<img class="img1" src="../../../assets/more.svg">
-</div>
+<div class="sub-icon-container" fxLayout="row" fxLayoutGap="15px">
+    <div>
+    <img class="img1" src="../../../assets/notifications.svg">
+    </div>
+    <div>
+    <img class="img1" src="../../../assets/person_add.svg">
+    </div>
+    <div>
+    <img class="img1" src="../../../assets/colorplette.svg">
+    </div>
+    <div>
+    <img class="img1" src="../../../assets/image.svg">
+    </div>
+    <div>
+    <img class="img1" src="../../../assets/archive.svg">
+    </div>
+
+    <div class="more">
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-btn">
+            <img class="img1" src="../../../assets/more.svg">
+        </button>
+        <mat-menu #menu="matMenu">
+
+            <button mat-menu-item>
+              <span>Delete Note</span>
+            </button>
+            <button mat-menu-item>
+              <span>Add label</span>
+            </button>
+            <button mat-menu-item>
+              <span>Add drawing</span>
+            </button>
+            <button mat-menu-item>
+              <span>Make a Copy</span>
+            </button>
+            <button mat-menu-item>
+              <span>Show tick boxes</span>
+            </button>
+            <button mat-menu-item>
+              <span>Copy to Google Docs</span>
+            </button>
+    
+          </mat-menu>
+    </div>
+
 </div>

@@ -14,7 +14,7 @@ export class HttpService {
     console.log('this is httpservice')
     return this.httpclient.get(url,token && options)
   }
-  putservice(){
-    
+  putservice(url:any,data:any,token:boolean=true,options:any){
+    return this.httpclient.put(url,data,token && options)
   }
 }

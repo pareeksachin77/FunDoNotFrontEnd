@@ -31,4 +31,13 @@ constructor(private http:HttpService) { this.token = localStorage.getItem('token
     }
     return this.http.getservices('https://localhost:44391/api/Notes/RetrieveAllNote',true,header)
   }
+  UpdateNotes(data:any){
+    let header={
+      headers: new HttpHeaders({
+        'Content-Type':'application/json',
+        'Authorization':'bearer '+this.token
+      })
+  }
+  return this.http.putservice('https://localhost:44391/api/Notes/Update',data,true,header)
+}
 }

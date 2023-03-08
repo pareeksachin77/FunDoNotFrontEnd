@@ -1,0 +1,13 @@
+<div class="note" style="overflow:hidden;">
+    <div class="title" fxLayout="row" fxLayoutAlign="space-between">
+        <input type="text" placeholder="title" [(ngModel)]="title">
+        <img  class="img" src="../../../assets/push_pin.svg">
+    </div>
+    <div class="desc">
+        <input type="text" [(ngModel)]="desc">
+    </div>
+    <div class="icon-bar" fxLayout="row" fxLayoutAlign="space-between center">
+        <app-iconcomp></app-iconcomp>
+        <button class="closebutton" (click)="onNoClick()">Close</button>
+    </div>
+</div>
