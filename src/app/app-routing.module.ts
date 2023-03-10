@@ -9,6 +9,8 @@ import { CreateNoteComponent } from './components/create-note/create-note.compon
 import { IconcompComponent } from './components/iconcomp/iconcomp.component';
 import { DisplayNoteComponent } from './components/display-note/display-note.component';
 import { GetAllNotesComponent } from './components/get-all-notes/get-all-notes.component';
+import { ArchieveComponent } from './components/archieve/archieve.component';
+import { TrashNoteComponent } from './components/trash-note/trash-note.component';
 
 
 
@@ -21,8 +23,8 @@ const routes: Routes = [
    children:[
     {path:'notes',component:GetAllNotesComponent},
     {path:'reminder',component:RegisterComponent},
-    {path:'archive',component:RegisterComponent},
-    {path:'trash',component:RegisterComponent},
+    {path:'archive',component:ArchieveComponent},
+    {path:'trash',component:TrashNoteComponent},
    ]
 
   },

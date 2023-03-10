@@ -1,27 +1,41 @@
 <div class="sub-icon-container" fxLayout="row" fxLayoutGap="15px">
-    <div>
+    <div *ngIf="!isTrashed">
     <img class="img1" src="../../../assets/notifications.svg">
     </div>
-    <div>
+    <div *ngIf="!isTrashed">
     <img class="img1" src="../../../assets/person_add.svg">
     </div>
-    <div>
-    <img class="img1" src="../../../assets/colorplette.svg">
-    </div>
-    <div>
+    <div *ngIf="!isTrashed">
+    <img class="img1" mat-button [matMenuTriggerFor]="noteColor" src="../../../assets/colorplette.svg">
+    <mat-menu #noteColor="matMenu" yPosition="below">
+      <div class="changeColor">
+        <div *ngFor="let color of colors">
+          <button class="circle" [style.background]="color?.name" (click)="setColor(color.name)">
+          </button>
+        </div>
+      </div>
+    </mat-menu>
+ </div>
+
+    <div *ngIf="!isTrashed">
     <img class="img1" src="../../../assets/image.svg">
     </div>
-    <div>
+    <!-- Archive and unarchive condition -->
+    <div class="btn-grp" *ngIf="!isArchived && !isTrashed" (click)="onArchieve()">
     <img class="img1" src="../../../assets/archive.svg">
     </div>
+    <div class="btn-grp"  *ngIf="isArchived" (click)="unarchive()">
+      <img class="img1" src="../../../assets/unarchive.svg">
+    </div>
 
-    <div class="more">
+
+    <div *ngIf="!isTrashed">
         <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-btn">
             <img class="img1" src="../../../assets/more.svg">
         </button>
         <mat-menu #menu="matMenu">
 
-            <button mat-menu-item>
+            <button mat-menu-item (click)="trash()">
               <span>Delete Note</span>
             </button>
             <button mat-menu-item>
@@ -42,5 +56,10 @@
     
           </mat-menu>
     </div>
-
+    <div class="btn-grp" *ngIf="isTrashed" (click)="delete()">
+      <img class="img1" src="../../../assets/delete_forever.svg">
+      </div>
+      <div class="btn-grp"  *ngIf="isTrashed" (click)="restore()">
+        <img class="img1" src="../../../assets/restore_from_trash.svg">
+      </div>
 </div>

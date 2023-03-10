@@ -3,7 +3,7 @@
     <div *ngFor="let note of NotesList">
     <div class="sub-container">
     <form>
-        <div style="border: 5px solid green;" (click)="openDialog(note)">
+        <div (click)="openDialog(note)">
         <div class="title">
             <p>{{note.title}}
             <img class="img" src="../../../assets/push_pin.svg"></p>
@@ -12,7 +12,9 @@
             <p>{{note.description}}</p>
         </div>
         </div>
-        <div><app-iconcomp></app-iconcomp></div>
+        <div class="hidden">
+            <app-iconcomp [notecomp]="note"></app-iconcomp>
+        </div>
     </form>
     </div>
     </div>

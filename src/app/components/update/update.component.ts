@@ -20,15 +20,15 @@ notesId:any;
     console.log(this.data,this.data.id);
     this.title=this.data.title;
     this.desc=this.data.description;
-    this.notesId=this.data.notesId;
+    this.notesId=this.data.noteID;
   }
   onNoClick(): void {
     let abcd ={ 
       title: this.title,
       description: this.desc,
-      notesId : this.notesId
     }
-    this.notes.UpdateNotes(abcd).subscribe((Response: any) => {
+    this.notes.UpdateNotes(abcd,this.notesId).subscribe((Response: any) => {
+
       console.log(Response);
     });
     this.dialogRef.close();

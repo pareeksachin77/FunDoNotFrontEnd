@@ -17,4 +17,8 @@ export class HttpService {
   putservice(url:any,data:any,token:boolean=true,options:any){
     return this.httpclient.put(url,data,token && options)
   }
+  deleteservices(url:any,token:boolean=true,options:any){
+    console.log('this is httpdeleteservice')
+    return this.httpclient.delete(url,token && options)
+  }
 }

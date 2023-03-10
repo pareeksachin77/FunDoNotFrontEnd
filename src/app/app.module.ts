@@ -27,6 +27,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { UpdateComponent } from './components/update/update.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
+import { ArchieveComponent } from './components/archieve/archieve.component';
+import { TrashNoteComponent } from './components/trash-note/trash-note.component';
 @NgModule({
 
   declarations: [
@@ -41,6 +43,8 @@ import {MatMenuModule} from '@angular/material/menu';
     DisplayNoteComponent,
     IconcompComponent,
     UpdateComponent,
+    ArchieveComponent,
+    TrashNoteComponent,
   ],
   imports: [
     BrowserModule,
