@@ -29,6 +29,7 @@ export class IconcompComponent implements OnInit {
       { code: '#e8eaed', name: 'grey' },
   ];
 
+
   constructor(private note: NoteserviceService,private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
@@ -109,5 +110,7 @@ export class IconcompComponent implements OnInit {
  
      })
    }
+
+   
 
 }
